@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Rental Service - Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Full-page carousel with adjusted content */
+      .carousel-item {
+        height: 100vh; /* Default for large screens */
+      }
+
+      .carousel-inner img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover; /* Ensure the image covers the entire area */
+        object-position: center; /* Center the image */
+      }
+
+      .carousel-caption {
+        background: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        border-radius: 5px;
+        bottom: 10%; /* Position caption towards the bottom */
+      }
+
+      footer {
+        background-color: #222;
+        color: #ccc;
+        position: relative;
+        z-index: 10;
+      }
+
+      /* Navbar Styling */
+      .navbar {
+        background-color: lightseagreen;
+        box-shadow: white;
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: 1px solid #ddd;
+        margin: 10px;
+        z-index: 20;
+      }
+
+      .navbar-nav .nav-link {
+        color: white;
+      }
+
+      /* Hover effect for nav items */
+      .navbar-nav .nav-link:hover {
+        background-color: #f8f9fa;
+        color: #007bff;
+        border-radius: 5px;
+      }
+
+      /* Body styling to make sure page does not scroll */
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+      }
+
+      .main-content {
+        min-height: 100vh; /* Ensure the main content fills the screen */
+      }
+
+      /* Responsive Adjustments */
+      @media (max-width: 768px) {
+        .carousel-item {
+          height: 60vh; /* Smaller height for the carousel on mobile */
+        }
+
+        .carousel-caption h1 {
+          font-size: 1.8rem; /* Smaller text on smaller screens */
+        }
+
+        .carousel-caption p {
+          font-size: 1rem; /* Smaller paragraph text */
+        }
+
+        .carousel-caption .btn {
+          font-size: 0.9rem; /* Adjust button size */
+        }
+
+        /* Adjust the image positioning on mobile */
+        .carousel-inner img {
+          object-position: top; /* Keep top part of the image visible on smaller screens */
+        }
+      }
+
+      /* Mobile Navbar Menu */
+      @media (max-width: 768px) {
+        .navbar {
+          padding: 10px 10px;
+        }
+
+        .navbar-nav {
+          text-align: center;
+        }
+
+        .navbar-nav .nav-item {
+          margin: 5px 0;
+        }
+
+        .carousel-caption {
+          padding: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">CarRental</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cars.html">Cars</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="offers.html">Offers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Full-page Hero Section with Carousel -->
+    <section class="main-content">
+      <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <img src="i1.png" class="d-block w-100" alt="Luxury SUV" />
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Find Your Perfect Ride</h1>
+              <p>Rent cars by the hour, day, or week!</p>
+              <a href="cars.html" class="btn btn-light mt-3">Explore Cars</a>
+            </div>
+          </div>
+
+         
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <p>&copy; 2025 CarRental. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
